@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  TencentViewController.h
 //  FYVideoPlayerDemo
 //
-//  Created by fangYong on 17/9/6.
+//  Created by fangYong on 17/9/7.
 //  Copyright © 2017年 fangYong. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TencentViewController : UIViewController
 
 @end
-

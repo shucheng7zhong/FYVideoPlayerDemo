@@ -19,4 +19,5 @@ target 'FYVideoPlayerDemo' do
     # Pods for testing
   end
   pod 'Masonry'
+  pod 'AFNetworking'
 end

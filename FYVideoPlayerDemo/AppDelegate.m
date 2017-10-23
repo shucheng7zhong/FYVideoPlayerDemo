@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "TencentViewController.h"
+@interface AppDelegate (){
+    
+    UITabBarController *_tabBarController;
+}
 
 @end
 
@@ -16,11 +19,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    
+    [self createRootViewController];
+    
+    self.window.rootViewController = _tabBarController;
+
     return YES;
 }
 
 
+- (void)createRootViewController {
+    
+    UITabBarItem *item;
+    TencentViewController *vc = [TencentViewController new];
+    item = [vc.tabBarItem initWithTitle:@"腾讯" image:[UIImage imageNamed:@"tecent"] selectedImage:[UIImage imageNamed:@"tecent_selected"]];
+    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:vc];
+    _tabBarController = [[UITabBarController alloc]init];
+    _tabBarController.viewControllers = [NSArray arrayWithObject:nav1];
+    _tabBarController.selectedIndex = 0;
+    _tabBarController.tabBar.tintColor = [UIColor colorWithRed:197/255.0 green:55/255.0 blue:60/255.0 alpha:1];
+    _tabBarController.tabBar.barTintColor = [UIColor whiteColor];
+}
+    
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

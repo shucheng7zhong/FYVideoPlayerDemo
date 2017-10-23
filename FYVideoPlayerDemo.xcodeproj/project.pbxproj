@@ -10,12 +10,19 @@
 		3F4BCC6EF29D92BA8E4B3C6B /* libPods-FYVideoPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF52CF92B8CE99A3C3AD2CC /* libPods-FYVideoPlayerDemo.a */; };
 		8410B06E1F5FEAA400F093AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B06D1F5FEAA400F093AA /* main.m */; };
 		8410B0711F5FEAA400F093AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0701F5FEAA400F093AA /* AppDelegate.m */; };
-		8410B0741F5FEAA400F093AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0731F5FEAA400F093AA /* ViewController.m */; };
-		8410B0771F5FEAA400F093AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0751F5FEAA400F093AA /* Main.storyboard */; };
-		8410B0791F5FEAA400F093AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0781F5FEAA400F093AA /* Assets.xcassets */; };
-		8410B07C1F5FEAA400F093AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410B07A1F5FEAA400F093AA /* LaunchScreen.storyboard */; };
 		8410B0871F5FEAA400F093AA /* FYVideoPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0861F5FEAA400F093AA /* FYVideoPlayerDemoTests.m */; };
 		8410B0921F5FEAA400F093AA /* FYVideoPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0911F5FEAA400F093AA /* FYVideoPlayerDemoUITests.m */; };
+		8410B0A41F61325D00F093AA /* TencentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410B0A31F61325D00F093AA /* TencentViewController.m */; };
+		8410B0A71F61344300F093AA /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0A61F61344300F093AA /* image.xcassets */; };
+		8410B0A91F613AF200F093AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0A81F613AF200F093AA /* Assets.xcassets */; };
+		8410B0AF1F613C2200F093AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0AB1F613C2200F093AA /* LaunchScreen.storyboard */; };
+		8410B0B01F613C2200F093AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0AD1F613C2200F093AA /* Main.storyboard */; };
+		844907B41F9897A8004C720C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 844907B31F9897A8004C720C /* DataManager.m */; };
+		8464E98E1F975021000D15E8 /* FYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464E98D1F975021000D15E8 /* FYPlayer.m */; };
+		84B420CA1F9DC73500D55DE1 /* fyVideoSideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B420C91F9DC73500D55DE1 /* fyVideoSideModel.m */; };
+		84B420CD1F9DC75100D55DE1 /* fyVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B420CC1F9DC75100D55DE1 /* fyVideoModel.m */; };
+		84FDFCBA1F667052001FD1D1 /* FYVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDFCB81F667052001FD1D1 /* FYVideoCell.m */; };
+		84FDFCBB1F667052001FD1D1 /* FYVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */; };
 		A9F6ABD77DB7D79DC5E09458 /* libPods-FYVideoPlayerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C728CAD6B01406B607DC4A1 /* libPods-FYVideoPlayerDemoTests.a */; };
 		F6A2B4F5E32040D9AE4609E6 /* libPods-FYVideoPlayerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F1E1AE30354DA750627B69 /* libPods-FYVideoPlayerDemoUITests.a */; };
 /* End PBXBuildFile section */
@@ -46,18 +53,31 @@
 		8410B06D1F5FEAA400F093AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8410B06F1F5FEAA400F093AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8410B0701F5FEAA400F093AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8410B0721F5FEAA400F093AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8410B0731F5FEAA400F093AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8410B0761F5FEAA400F093AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8410B0781F5FEAA400F093AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8410B07B1F5FEAA400F093AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8410B07D1F5FEAA400F093AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410B07D1F5FEAA400F093AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8410B0821F5FEAA400F093AA /* FYVideoPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYVideoPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8410B0861F5FEAA400F093AA /* FYVideoPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYVideoPlayerDemoTests.m; sourceTree = "<group>"; };
 		8410B0881F5FEAA400F093AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8410B08D1F5FEAA400F093AA /* FYVideoPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYVideoPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8410B0911F5FEAA400F093AA /* FYVideoPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYVideoPlayerDemoUITests.m; sourceTree = "<group>"; };
 		8410B0931F5FEAA400F093AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410B0A21F61325D00F093AA /* TencentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentViewController.h; sourceTree = "<group>"; };
+		8410B0A31F61325D00F093AA /* TencentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentViewController.m; sourceTree = "<group>"; };
+		8410B0A61F61344300F093AA /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		8410B0A81F613AF200F093AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		8410B0AC1F613C2200F093AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8410B0AE1F613C2200F093AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		844907B21F9897A8004C720C /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		844907B31F9897A8004C720C /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		8464E98C1F975021000D15E8 /* FYPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPlayer.h; sourceTree = "<group>"; };
+		8464E98D1F975021000D15E8 /* FYPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPlayer.m; sourceTree = "<group>"; };
+		84B420C81F9DC73500D55DE1 /* fyVideoSideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fyVideoSideModel.h; sourceTree = "<group>"; };
+		84B420C91F9DC73500D55DE1 /* fyVideoSideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fyVideoSideModel.m; sourceTree = "<group>"; };
+		84B420CB1F9DC75100D55DE1 /* fyVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fyVideoModel.h; sourceTree = "<group>"; };
+		84B420CC1F9DC75100D55DE1 /* fyVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fyVideoModel.m; sourceTree = "<group>"; };
+		84FDFCB71F667052001FD1D1 /* FYVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYVideoCell.h; sourceTree = "<group>"; };
+		84FDFCB81F667052001FD1D1 /* FYVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYVideoCell.m; sourceTree = "<group>"; };
+		84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYVideoCell.xib; sourceTree = "<group>"; };
+		84FDFCBC1F66822D001FD1D1 /* FY_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FY_PrefixHeader.pch; sourceTree = "<group>"; };
 		AC8BE6C2F5B7CC042C4FCC16 /* Pods-FYVideoPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYVideoPlayerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYVideoPlayerDemoTests/Pods-FYVideoPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D47E0CFBB198FC9192EC26C1 /* Pods-FYVideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYVideoPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYVideoPlayerDemo/Pods-FYVideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D6F1E1AE30354DA750627B69 /* libPods-FYVideoPlayerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYVideoPlayerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,14 +151,13 @@
 		8410B06B1F5FEAA400F093AA /* FYVideoPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				844907B11F9895EA004C720C /* DataManager */,
+				8464E98B1F974F78000D15E8 /* FYPlayer */,
+				8410B09F1F61314F00F093AA /* Module */,
 				8410B06F1F5FEAA400F093AA /* AppDelegate.h */,
 				8410B0701F5FEAA400F093AA /* AppDelegate.m */,
-				8410B0721F5FEAA400F093AA /* ViewController.h */,
-				8410B0731F5FEAA400F093AA /* ViewController.m */,
-				8410B0751F5FEAA400F093AA /* Main.storyboard */,
-				8410B0781F5FEAA400F093AA /* Assets.xcassets */,
-				8410B07A1F5FEAA400F093AA /* LaunchScreen.storyboard */,
-				8410B07D1F5FEAA400F093AA /* Info.plist */,
+				8410B0A51F6133E100F093AA /* Resource */,
+				8410B0AA1F613C2200F093AA /* Base.lproj */,
 				8410B06C1F5FEAA400F093AA /* Supporting Files */,
 			);
 			path = FYVideoPlayerDemo;
@@ -148,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				8410B06D1F5FEAA400F093AA /* main.m */,
+				84FDFCBC1F66822D001FD1D1 /* FY_PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,6 +188,83 @@
 				8410B0931F5FEAA400F093AA /* Info.plist */,
 			);
 			path = FYVideoPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		8410B09F1F61314F00F093AA /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0A01F61319700F093AA /* Sina */,
+				8410B0A11F61319700F093AA /* Tencent */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		8410B0A01F61319700F093AA /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		8410B0A11F61319700F093AA /* Tencent */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0A21F61325D00F093AA /* TencentViewController.h */,
+				8410B0A31F61325D00F093AA /* TencentViewController.m */,
+				84FDFCB71F667052001FD1D1 /* FYVideoCell.h */,
+				84FDFCB81F667052001FD1D1 /* FYVideoCell.m */,
+				84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */,
+			);
+			path = Tencent;
+			sourceTree = "<group>";
+		};
+		8410B0A51F6133E100F093AA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0A81F613AF200F093AA /* Assets.xcassets */,
+				8410B07D1F5FEAA400F093AA /* Info.plist */,
+				8410B0A61F61344300F093AA /* image.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8410B0AA1F613C2200F093AA /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8410B0AB1F613C2200F093AA /* LaunchScreen.storyboard */,
+				8410B0AD1F613C2200F093AA /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		844907B11F9895EA004C720C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				84B420C71F9DC6F000D55DE1 /* Model */,
+				844907B21F9897A8004C720C /* DataManager.h */,
+				844907B31F9897A8004C720C /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		8464E98B1F974F78000D15E8 /* FYPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8464E98C1F975021000D15E8 /* FYPlayer.h */,
+				8464E98D1F975021000D15E8 /* FYPlayer.m */,
+			);
+			path = FYPlayer;
+			sourceTree = "<group>";
+		};
+		84B420C71F9DC6F000D55DE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B420C81F9DC73500D55DE1 /* fyVideoSideModel.h */,
+				84B420C91F9DC73500D55DE1 /* fyVideoSideModel.m */,
+				84B420CB1F9DC75100D55DE1 /* fyVideoModel.h */,
+				84B420CC1F9DC75100D55DE1 /* fyVideoModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A0DBBE6DE1656E08445A6B29 /* Frameworks */ = {
@@ -298,9 +395,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8410B07C1F5FEAA400F093AA /* LaunchScreen.storyboard in Resources */,
-				8410B0791F5FEAA400F093AA /* Assets.xcassets in Resources */,
-				8410B0771F5FEAA400F093AA /* Main.storyboard in Resources */,
+				8410B0AF1F613C2200F093AA /* LaunchScreen.storyboard in Resources */,
+				8410B0A91F613AF200F093AA /* Assets.xcassets in Resources */,
+				84FDFCBB1F667052001FD1D1 /* FYVideoCell.xib in Resources */,
+				8410B0A71F61344300F093AA /* image.xcassets in Resources */,
+				8410B0B01F613C2200F093AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,9 +571,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8410B0741F5FEAA400F093AA /* ViewController.m in Sources */,
+				84B420CD1F9DC75100D55DE1 /* fyVideoModel.m in Sources */,
 				8410B0711F5FEAA400F093AA /* AppDelegate.m in Sources */,
+				844907B41F9897A8004C720C /* DataManager.m in Sources */,
+				8410B0A41F61325D00F093AA /* TencentViewController.m in Sources */,
+				84FDFCBA1F667052001FD1D1 /* FYVideoCell.m in Sources */,
+				84B420CA1F9DC73500D55DE1 /* fyVideoSideModel.m in Sources */,
 				8410B06E1F5FEAA400F093AA /* main.m in Sources */,
+				8464E98E1F975021000D15E8 /* FYPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,20 +614,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8410B0751F5FEAA400F093AA /* Main.storyboard */ = {
+		8410B0AB1F613C2200F093AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8410B0761F5FEAA400F093AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8410B07A1F5FEAA400F093AA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8410B07B1F5FEAA400F093AA /* Base */,
+				8410B0AC1F613C2200F093AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8410B0AD1F613C2200F093AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8410B0AE1F613C2200F093AA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -623,7 +727,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FYVideoPlayerDemo/FY_PrefixHeader.pch;
 				INFOPLIST_FILE = FYVideoPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYVideoPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,7 +747,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZBFGYZT9D6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FYVideoPlayerDemo/FY_PrefixHeader.pch;
 				INFOPLIST_FILE = FYVideoPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaishai365.FYVideoPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
