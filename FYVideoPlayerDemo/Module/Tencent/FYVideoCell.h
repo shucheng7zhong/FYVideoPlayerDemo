@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "VideoModel.h"
 @interface FYVideoCell : UITableViewCell
+
+@property (strong, nonatomic) VideoModel *videoModel;
 
 @end

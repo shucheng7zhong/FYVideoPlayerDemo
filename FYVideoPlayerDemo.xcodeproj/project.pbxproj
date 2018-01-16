@@ -19,8 +19,10 @@
 		8410B0B01F613C2200F093AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410B0AD1F613C2200F093AA /* Main.storyboard */; };
 		844907B41F9897A8004C720C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 844907B31F9897A8004C720C /* DataManager.m */; };
 		8464E98E1F975021000D15E8 /* FYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464E98D1F975021000D15E8 /* FYPlayer.m */; };
-		84B420CA1F9DC73500D55DE1 /* fyVideoSideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B420C91F9DC73500D55DE1 /* fyVideoSideModel.m */; };
-		84B420CD1F9DC75100D55DE1 /* fyVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B420CC1F9DC75100D55DE1 /* fyVideoModel.m */; };
+		84B420CA1F9DC73500D55DE1 /* VideoSideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B420C91F9DC73500D55DE1 /* VideoSideModel.m */; };
+		84B420CD1F9DC75100D55DE1 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B420CC1F9DC75100D55DE1 /* VideoModel.m */; };
+		84B421A51FA0692000D55DE1 /* FYPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B421A41FA0692000D55DE1 /* FYPlayerDetailViewController.m */; };
+		84B97363200DE4D800E3DE81 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B97362200DE4D800E3DE81 /* BaseViewController.m */; };
 		84FDFCBA1F667052001FD1D1 /* FYVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDFCB81F667052001FD1D1 /* FYVideoCell.m */; };
 		84FDFCBB1F667052001FD1D1 /* FYVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */; };
 		A9F6ABD77DB7D79DC5E09458 /* libPods-FYVideoPlayerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C728CAD6B01406B607DC4A1 /* libPods-FYVideoPlayerDemoTests.a */; };
@@ -70,10 +72,14 @@
 		844907B31F9897A8004C720C /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		8464E98C1F975021000D15E8 /* FYPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPlayer.h; sourceTree = "<group>"; };
 		8464E98D1F975021000D15E8 /* FYPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPlayer.m; sourceTree = "<group>"; };
-		84B420C81F9DC73500D55DE1 /* fyVideoSideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fyVideoSideModel.h; sourceTree = "<group>"; };
-		84B420C91F9DC73500D55DE1 /* fyVideoSideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fyVideoSideModel.m; sourceTree = "<group>"; };
-		84B420CB1F9DC75100D55DE1 /* fyVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fyVideoModel.h; sourceTree = "<group>"; };
-		84B420CC1F9DC75100D55DE1 /* fyVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fyVideoModel.m; sourceTree = "<group>"; };
+		84B420C81F9DC73500D55DE1 /* VideoSideModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoSideModel.h; sourceTree = "<group>"; };
+		84B420C91F9DC73500D55DE1 /* VideoSideModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoSideModel.m; sourceTree = "<group>"; };
+		84B420CB1F9DC75100D55DE1 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		84B420CC1F9DC75100D55DE1 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		84B421A31FA0692000D55DE1 /* FYPlayerDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYPlayerDetailViewController.h; sourceTree = "<group>"; };
+		84B421A41FA0692000D55DE1 /* FYPlayerDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPlayerDetailViewController.m; sourceTree = "<group>"; };
+		84B97361200DE4D800E3DE81 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		84B97362200DE4D800E3DE81 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		84FDFCB71F667052001FD1D1 /* FYVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYVideoCell.h; sourceTree = "<group>"; };
 		84FDFCB81F667052001FD1D1 /* FYVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYVideoCell.m; sourceTree = "<group>"; };
 		84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYVideoCell.xib; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 				8410B09F1F61314F00F093AA /* Module */,
 				8410B06F1F5FEAA400F093AA /* AppDelegate.h */,
 				8410B0701F5FEAA400F093AA /* AppDelegate.m */,
+				84B97361200DE4D800E3DE81 /* BaseViewController.h */,
+				84B97362200DE4D800E3DE81 /* BaseViewController.m */,
 				8410B0A51F6133E100F093AA /* Resource */,
 				8410B0AA1F613C2200F093AA /* Base.lproj */,
 				8410B06C1F5FEAA400F093AA /* Supporting Files */,
@@ -211,6 +219,8 @@
 			children = (
 				8410B0A21F61325D00F093AA /* TencentViewController.h */,
 				8410B0A31F61325D00F093AA /* TencentViewController.m */,
+				84B421A31FA0692000D55DE1 /* FYPlayerDetailViewController.h */,
+				84B421A41FA0692000D55DE1 /* FYPlayerDetailViewController.m */,
 				84FDFCB71F667052001FD1D1 /* FYVideoCell.h */,
 				84FDFCB81F667052001FD1D1 /* FYVideoCell.m */,
 				84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */,
@@ -259,10 +269,10 @@
 		84B420C71F9DC6F000D55DE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84B420C81F9DC73500D55DE1 /* fyVideoSideModel.h */,
-				84B420C91F9DC73500D55DE1 /* fyVideoSideModel.m */,
-				84B420CB1F9DC75100D55DE1 /* fyVideoModel.h */,
-				84B420CC1F9DC75100D55DE1 /* fyVideoModel.m */,
+				84B420C81F9DC73500D55DE1 /* VideoSideModel.h */,
+				84B420C91F9DC73500D55DE1 /* VideoSideModel.m */,
+				84B420CB1F9DC75100D55DE1 /* VideoModel.h */,
+				84B420CC1F9DC75100D55DE1 /* VideoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -540,9 +550,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FYVideoPlayerDemo/Pods-FYVideoPlayerDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -571,14 +584,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B420CD1F9DC75100D55DE1 /* fyVideoModel.m in Sources */,
+				84B420CD1F9DC75100D55DE1 /* VideoModel.m in Sources */,
+				84B97363200DE4D800E3DE81 /* BaseViewController.m in Sources */,
 				8410B0711F5FEAA400F093AA /* AppDelegate.m in Sources */,
 				844907B41F9897A8004C720C /* DataManager.m in Sources */,
 				8410B0A41F61325D00F093AA /* TencentViewController.m in Sources */,
 				84FDFCBA1F667052001FD1D1 /* FYVideoCell.m in Sources */,
-				84B420CA1F9DC73500D55DE1 /* fyVideoSideModel.m in Sources */,
+				84B420CA1F9DC73500D55DE1 /* VideoSideModel.m in Sources */,
 				8410B06E1F5FEAA400F093AA /* main.m in Sources */,
 				8464E98E1F975021000D15E8 /* FYPlayer.m in Sources */,
+				84B421A51FA0692000D55DE1 /* FYPlayerDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

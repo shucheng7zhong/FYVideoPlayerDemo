@@ -7,8 +7,8 @@
 //
 
 #import "DataManager.h"
-#import "fyVideoModel.h"
-#import "fyVideoSideModel.h"
+#import "VideoModel.h"
+#import "VideoSideModel.h"
 
 @implementation DataManager
 
@@ -35,13 +35,13 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         for (NSDictionary *dic in [responseObject objectForKey:@"videoList"]) {
-            fyVideoModel *videoModel = [[fyVideoModel alloc]init];
+            VideoModel *videoModel = [[VideoModel alloc]init];
             [videoModel setValuesForKeysWithDictionary:dic];
             [videoArray addObject:videoModel];
         }
         
         for (NSDictionary *dic in [responseObject objectForKey:@"videoSidList"]) {
-            fyVideoSideModel *model = [[fyVideoSideModel alloc]init];
+            VideoSideModel *model = [[VideoSideModel alloc]init];
             [model setValuesForKeysWithDictionary:dic];
             [videoSidArray addObject:model];
         }

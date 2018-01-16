@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TencentViewController : UIViewController
+#import "BaseViewController.h"
+@interface TencentViewController : BaseViewController
 
 @end

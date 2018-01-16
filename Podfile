@@ -20,4 +20,7 @@ target 'FYVideoPlayerDemo' do
   end
   pod 'Masonry'
   pod 'AFNetworking'
+  pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'MBProgressHUD'
 end

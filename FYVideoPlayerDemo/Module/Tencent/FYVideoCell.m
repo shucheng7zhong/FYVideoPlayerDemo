@@ -7,6 +7,8 @@
 //
 
 #import "FYVideoCell.h"
+#import "UIImageView+WebCache.h"
+
 
 @interface FYVideoCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -22,13 +24,23 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+}
+
+
+- (void)setVideoModel:(VideoModel *)videoModel {
+    
+    _videoModel = videoModel;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.titleLabel.text = videoModel.title;
+    self.subTitleLabel.text = videoModel.descriptionDe;
+    [self.videoImageView sd_setImageWithURL:[NSURL URLWithString:videoModel.cover] placeholderImage:[UIImage imageNamed:@"logo"]];
+    self.playerCountLabel.text = [NSString stringWithFormat:@"%ld.%ld万",videoModel.playCount/10000,videoModel.playCount/1000-videoModel.playCount/10000];
+    self.timeLabel.text = [videoModel.ptime substringWithRange:NSMakeRange(12, 4)];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
 }
 
 @end

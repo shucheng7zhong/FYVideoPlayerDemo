@@ -20,7 +20,7 @@
     
     self = [super initWithFrame:frame];
     if (self) {
-        
+        [self createContentView];
     }
     return self;
 }
@@ -35,17 +35,24 @@
         
         make.edges.equalTo(self);
     }];
+    [self createPlayer];
 }
 
+- (void)createPlayer {
+    
+    self.urlAsset = [[AVURLAsset alloc]initWithURL:[NSURL URLWithString:self.urlString] options:nil];
+    
+    self.playItem  = [AVPlayerItem playerItemWithAsset:self.urlAsset];
+    
+    self.player = [AVPlayer playerWithPlayerItem:self.playItem];
+    self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    self.playerLayer.frame = self.bounds;
+    [self.layer addSublayer:self.playerLayer];
+}
 
 - (void)play {
     
-    if (_isInitPlayer ) {
-        
-    }else {
-        
-        
-    }
+    [self.player play];
 }
 
 @end
