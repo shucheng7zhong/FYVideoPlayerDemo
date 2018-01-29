@@ -24,6 +24,14 @@
 @property (strong, nonatomic) AVURLAsset *urlAsset;
 
 @property (strong, nonatomic) NSString *urlString;
+//菊花
+@property (strong, nonatomic) UIActivityIndicatorView *loadView;
+
+@property (strong, nonatomic) UIImageView *topView;
+
+@property (strong, nonatomic) UIImageView *bottomView;
+
+@property (nonatomic,strong) UILabel  *titleLabel;
 
 - (instancetype)initWithFrame:(CGRect)frame;
 

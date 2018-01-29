@@ -10,6 +10,12 @@
 #import "VideoModel.h"
 @interface FYVideoCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *videoImageView;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *playerCountLabel;
+@property (weak, nonatomic) IBOutlet UIButton *videoPlayerButton;
 @property (strong, nonatomic) VideoModel *videoModel;
 
 @end

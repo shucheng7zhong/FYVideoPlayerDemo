@@ -14,9 +14,14 @@
 #import "MJRefresh.h"
 
 @interface TencentViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    NSIndexPath * _currentIndex;
+}
 
 @property (weak, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *dataSourceArray;
+@property (strong, nonatomic) FYPlayer *videoPlayer;
+@property(nonatomic,retain)FYVideoCell *currentVideoCell;
 
 
 @end
@@ -88,7 +93,6 @@
     [self requestData];
 }
 
-
 - (void)createContentView {
     
     UITableView *tableView = [UITableView new];
@@ -122,6 +126,8 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"FYVideoCell" owner:nil options:nil] lastObject];
     }
+    [cell.videoPlayerButton addTarget:self action:@selector(videoPlayer:) forControlEvents:UIControlEventTouchUpInside];
+    cell.videoPlayerButton.tag = indexPath.row;
     if (self.dataSourceArray.count > 0) {
         cell.videoModel = self.dataSourceArray[indexPath.row];
     }
@@ -132,5 +138,36 @@
     
     FYPlayerDetailViewController *vc = [FYPlayerDetailViewController new];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)videoPlayer:(UIButton *)sender {
+    
+    _currentIndex = [NSIndexPath indexPathForRow:sender.tag inSection:0];
+    UIView *currentCell = [[sender superview] superview];
+    
+    self.currentVideoCell = (FYVideoCell *)(currentCell);
+    VideoModel *model = nil;
+    self.dataSourceArray.count > 0 ? (model = self.dataSourceArray[sender.tag]) : (model = nil);
+    
+    if (!_videoPlayer) {
+        
+        [self releaseVideoPlayer];
+        _videoPlayer = [[FYPlayer alloc]initWithFrame:self.currentVideoCell.videoImageView.bounds];
+        _videoPlayer.urlString = model.mp4_url;
+    }else {
+        
+        _videoPlayer = [[FYPlayer alloc]initWithFrame:self.currentVideoCell.videoImageView.bounds];
+        _videoPlayer.urlString = model.mp4_url;
+    }
+    [self.currentVideoCell.videoImageView addSubview:_videoPlayer];
+    [self.currentVideoCell.videoImageView addSubview:_videoPlayer];
+    [self.currentVideoCell.videoPlayerButton.superview sendSubviewToBack:_currentVideoCell.videoPlayerButton];
+    [_videoPlayer play];
+}
+
+- (void)releaseVideoPlayer {
+    
+    
+    
 }
 @end

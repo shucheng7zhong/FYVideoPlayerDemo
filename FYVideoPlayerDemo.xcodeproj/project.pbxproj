@@ -219,8 +219,8 @@
 			children = (
 				8410B0A21F61325D00F093AA /* TencentViewController.h */,
 				8410B0A31F61325D00F093AA /* TencentViewController.m */,
-				84B421A31FA0692000D55DE1 /* FYPlayerDetailViewController.h */,
 				84B421A41FA0692000D55DE1 /* FYPlayerDetailViewController.m */,
+				84B421A31FA0692000D55DE1 /* FYPlayerDetailViewController.h */,
 				84FDFCB71F667052001FD1D1 /* FYVideoCell.h */,
 				84FDFCB81F667052001FD1D1 /* FYVideoCell.m */,
 				84FDFCB91F667052001FD1D1 /* FYVideoCell.xib */,
